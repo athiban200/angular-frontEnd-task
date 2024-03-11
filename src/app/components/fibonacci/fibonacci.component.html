@@ -1,0 +1,13 @@
+<div class="container">
+    <h3 class="mb-5">FIBONACCI VALUE</h3>
+    <div class="input-container">
+        <label for="position">Enter position:</label>
+        <input type="number" id="position" [(ngModel)]="position" />
+        <button (click)="calculate()">Calculate</button>
+    </div>
+    <div *ngIf="fibonacciValue !== undefined" class="result">
+        <p>Fibonacci value at position {{ position }} is:</p>
+        <h2>{{ fibonacciValue }}</h2>
+    </div>
+</div>
+<hr>

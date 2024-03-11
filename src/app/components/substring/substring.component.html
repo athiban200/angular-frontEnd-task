@@ -1,0 +1,14 @@
+<div class="container mb-5">
+    <label for="inputString">Input String:</label>
+    <input type="text" id="inputString" [(ngModel)]="inputString" />
+
+    <button (click)="testFunction(inputString)">Get Balanced Substrings</button>
+
+    <div class="result-container" *ngIf="result.length > 0">
+        <p>Longest Balanced Substrings:</p>
+        <ul class="result-list">
+            <li>{{ result }}</li>
+        </ul>
+    </div>
+</div>
+<hr>
